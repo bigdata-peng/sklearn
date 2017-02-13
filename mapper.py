@@ -3,6 +3,10 @@
 import sys
 import pandas as pd
 
+## re-arrange table
+## 1. re format the tool name
+## 2. put tool name column first and then other columns
+
 try:
 	raw = pd.read_csv(sys.stdin,sep='\t',header=None)
 	raw.columns = ['traveler_step','part_type','recipe','tool_name','start_time',\
